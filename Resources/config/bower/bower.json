@@ -1,0 +1,6 @@
+{
+  "name": "NVD3Bundle",
+  "dependencies": {
+    "nvd3": "~1.1.*"
+  }
+}
