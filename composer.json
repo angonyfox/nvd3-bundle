@@ -30,6 +30,6 @@
        ]
    },
    "extra": {
-      "symfony-assets-install":"symlink",
+      "symfony-assets-install":"symlink"
    }
 }
