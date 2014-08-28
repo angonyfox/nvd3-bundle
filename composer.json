@@ -1,0 +1,35 @@
+{
+    "name" : "pandora/nvd3-bundle",
+    "description" : "A NVD3 Bundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "angonyfox",
+        "email" : "angonyfox@gmail.com"
+    }],
+    "keywords" : [
+        "nvd3", "d3", "symfony", "bundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "autoload" : {
+        "psr-0" : {
+            "Pandora\\NVD3Bundle" : ""
+        }
+    },
+    "target-dir": "Pandora/NVD3Bundle",
+    "require": {
+      "sp/bower-bundle": "0.*"
+    },
+    "scripts": {
+       "post-install-cmd": [
+           "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall"
+       ],
+       "post-update-cmd": [
+           "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall"
+       ]
+   },
+   "extra": {
+      "symfony-assets-install":"symlink",
+   }
+}
